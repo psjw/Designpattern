@@ -1,0 +1,14 @@
+Android의 View나 Button등의 위젯의 각종이벤트를 받을 때 쓰인다.
+
+버튼은 항상 클릭이라는 이벤트가 있으며 이 이벤트는 OnClickListener라는 인터페이스로 구성되어 있다.
+즉 버튼이라는 객체가 Publisher가 되고 OnClickListener가 Observer가 된다고 볼수 있다.
+버튼에서 상태가 변경(클릭 될 경우)된다면 OnClickListener로 알려준다.
+
+Button button=(Button)findViewById(xx);
+
+button.setOnclickListener(new OnClickListener(){
+    @Override
+    public void onClick(...){
+        //Action..
+    }
+});

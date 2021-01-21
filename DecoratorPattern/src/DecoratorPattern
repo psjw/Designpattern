@@ -1,0 +1,26 @@
+학습목표
+동적으로 책임추가가 필요할때 데코레이터 패턴을 사용할수 있다.
+
+Component
+실질적인 인스턴스를 컨트롤 하는 역할
+
+ConcreteComponent(realization)
+Compoenent의 실질적인 인스턴스 부분이며 책임의 주체의 역할
+Component가 컨트롤 하는 객체
+
+Decorator(equating)
+Component와 Concrete Decorator를 동일시 하도록 해주는 역할
+Decorator는 Component가 될수있고 Component를 가지고 있다
+
+Concrete Decorator(generalization)
+실질적인 장식 인스턴스 및 정의이며 추가된 책임의 주체 부분이다.
+
+* 예제 - 커피제조 방법
+
+- 에스프레소 : 커피의 기본
+- 아메리카노 : 에스프레소 + 물
+- 카페라떼 : 에스프레소 + 스팀밀크
+- 헤이즐넛 : 아메리카노 + 헤이즐넛 시럽
+- 카페모카 : 카페라떼 + 초콜릿
+- 캬라멜 마끼아또 : 카페라떼 + 카라멜 시럽
+
